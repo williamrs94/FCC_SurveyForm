@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="textoCentro">Formulário de pesquisa - Will</h1>
+            <p id="description" class="descriçãoTextoCentro">Obrigado por gastar seu tempo nos ajudando a aprimorar a plataforma</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="grupoFormulário">
+                <label id="name-label" for="nome">Nome</label>
+                <input type="text" name="nome" id="name" class="formulárioControle" placeholder="Digite seu nome" required>
+            </div>
+            <div class="grupoFormulário">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="formulárioControle" placeholder="Digite seu e-mail" required>
+            </div>
+            <div class="grupoFormulário">
+                <label id="number-label" for="número">Idade</label>
+                <input type="number" name="idade" id="number" min="10" max="99" class="formulárioControle" placeholder="Idade">
+            </div>
+            <div class="grupoFormulário">
+                <p>Qual é a opção que melhor descreve seu atual papel?</p>
+                <select name="papel" id="dropdown" class="formulárioControle" required>
+                    <option disabled selected value>Selecione seu papel atual</option>
+                    <option value="estudante">Estudante</option>
+                    <option value="trabalho">Trabalho de tempo integral</option>
+                    <option value="aprendiz">Aprendiz de tempo integral</option>
+                    <option value="nãoPrefereResponder">Prefiro não responder</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+            <div class="grupoFormulário">
+                <p>Você recomendaria Free Code Camp para um amigo?</p>
+                <label>
+                    <input name="recomendaçãoUsuário" value="definitivamente" type="radio" class="input-radio" checked>"Definitivamente"
+                </label>
+                <label>
+                    <input name="recomendaçãoUsuário" value="talvez" type="radio" class="input-radio">"Talvez"
+                </label>
+                <label>
+                    <input name="recomendaçãoUsuário" value="nãoSei" type="radio" class="input-radio">"Não sei"
+                </label>
+            </div>
+            <div class="grupoFormulário">
+                <p>Qual é a sua principal ferramenta do FCC?</p>
+                <select name="gosto-mais" id="gostoMais" class="formulárioControle" required>
+                    <option disabled selected value>Selecione uma opção</option>
+                    <option value="desafios">Desafios</option>
+                    <option value="projetos">Projetos</option>
+                    <option value="comunidade">Comunidade</option>
+                    <option value="fonteAberta">Fonte Aberta</option>
+                </select>
+            </div>
+            <div class="grupoFormulário">
+                <p>O que você gostaria que fosse aprimorado?
+                    <span class="dica">(Selecione todas as opções que se aplicam)</span>
+                </p>
+                <label>
+                    <input name="preferir" value="projetos-front-end" type="checkbox" class="input-checkbox">Projetos Front-end
+                </label>
+                <label>
+                    <input name="preferir" value="projetos-back-end" type="checkbox" class="input-checkbox">Projetos Back-end
+                </label>
+                <label>
+                    <input name="preferir" value="data-visualization" type="checkbox" class="input-checkbox">Data Visualization
+                </label>
+                <label>
+                    <input name="preferir" value="desafios" type="checkbox" class="input-checkbox">Desafios
+                </label>
+                <label>
+                    <input name="preferir" value="comunidadeAberta" type="checkbox" class="input-checkbox">Comunidade Aberta
+                </label>
+                <label>
+                    <input name="preferir" value="gitter-help-rooms" type="checkbox" class="input-checkbox">Gitter help rooms
+                </label>
+                <label>
+                    <input name="preferir" value="videos" type="checkbox" class="input-checkbox">Vídeos
+                </label>
+                <label>
+                    <input name="preferir" value="city-meetups" type="checkbox" class="input-checkbox">Encontros na cidade
+                </label>
+                <label>
+                    <input name="preferir" value="wiki" type="checkbox" class="input-checkbox">Wiki
+                </label>
+                <label>
+                    <input name="preferir" value="fórum" type="checkbox" class="input-checkbox">Fórum
+                </label>
+                <label>
+                    <input name="preferir" value="recursosAdicionais" type="checkbox" class="input-checkbox">Recursos Adicionais
+                </label>
+            </div>
+            <div class="grupoFormulário" id="caixaComents">
+                <p>Algum comentário ou sugestão?</p>
+                <textarea id="comentários" class="input-textarea" name="comentário" placeholder="Digite seu comentário aqui..."></textarea>
+            </div>
+            <div class="grupoFormulário">
+                <button type="submit" id="submit" class="submit-button">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
